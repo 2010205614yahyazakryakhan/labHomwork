@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stilim.css">
+</head>
+<body>
+
+<header>
+  Internet Based Programming
+</header>
+<section>
+  <nav>
+    <ol>
+      <li><a href="layout.html">Mainpage</a></li>
+      <li><a href="form.html">Form Page</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ol>
+  </nav>
+  <article>
+    <div class="container">
+      <form action="store.php" method="get">
+        <div class="row">
+          <div class="column-1">
+            <label>Firstname:</label>
+          </div>
+          <div class="column-2">
+            <input type="text" name="fname" required>
+            <span class="message"></span>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="column-1">
+            <label>Lastname:</label>
+          </div>
+          <div class="column-2">
+            <input type="text" name="lname" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-1">
+            <label>Password:</label>
+          </div>
+          <div class="column-2">
+            <input type="password" name="pass" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-1">
+            <label>Birthdate:</label>
+          </div>
+          <div class="column-2">
+            <input type="date" name="bdate" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-1">
+            <label>Class Level:</label>
+          </div>
+          <div class="column-2">
+            <select required>
+              <option value="" disabled selected>--select--</option>
+              <option value="1">Level 1</option>
+              <option value="2">Level 2</option>
+              <option value="3">Level 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-1">
+            <label>Vehicle Type:</label>
+          </div>
+          <div class="column-2">
+            <input type="radio" id="vehicle1" name="vehicle" value="Bike" required>
+            <label for="vehicle1"> Bike</label><br>
+            <input type="radio" id="vehicle2" name="vehicle" value="Car" required>
+            <label for="vehicle2"> Car</label><br>
+            <input type="radio" id="vehicle3" name="vehicle" value="Boat" required>
+            <label for="vehicle3"> Boat</label><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-1">
+            <label>Comment:</label>
+          </div>
+          <div class="column-2">
+            <textarea placeholder="write sth..." required></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column-1">
+            <label></label>
+          </div>
+
+          <div class="column-2">
+            <input type="submit" value="Submit">
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </article>
+</section>
+<footer>
+  This is footer.
+</footer>
+</body>
+</html>

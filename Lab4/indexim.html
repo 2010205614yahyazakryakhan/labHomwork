@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stilim.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+
+
+</head>
+<style>
+    h1{
+        font-family: Arial;
+    }
+    .formTitle{
+        color:brown;
+    }
+
+</style>
+
+<body>
+
+<h1 style="color:#0000ff; font-size: 3vw;">This is a form application</h1>
+
+<div class="container">
+    <form action="store.php" method="get">
+        <div class="row">
+            <div class="column-1">
+                <label>Firstname:</label>
+            </div>
+            <div class="column-2">
+                <input type="text" name="fname" required>
+                <span class="message"></span>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="column-1">
+                <label>Lastname:</label>
+            </div>
+            <div class="column-2">
+                <input type="text" name="lname" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-1">
+                <label>Password:</label>
+            </div>
+            <div class="column-2">
+                <input type="password" name="pass" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-1">
+                <label>Birthdate:</label>
+            </div>
+            <div class="column-2">
+                <input type="date" name="bdate" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-1">
+                <label>Class Level:</label>
+            </div>
+            <div class="column-2">
+                <select>
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-1">
+                <label>Vehicle Type:</label>
+            </div>
+            <div class="column-2">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Boat</label><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-1">
+                <label>Comment:</label>
+            </div>
+            <div class="column-2">
+                <textarea placeholder="write sth..."></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column-1">
+                <label></label>
+            </div>
+
+            <div class="column-2">
+                <input type="submit" value="Submit">
+            </div>
+
+        </div>>
+    </form>
+</div>
+
+</body>
+
+</html>
